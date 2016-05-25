@@ -123,3 +123,50 @@ h1,h2,h3,h4,h5,h6{
 	color: #8b8b9f;
 	margin:0.5em 0;
 }
+
+/* SEARCH BAR STYLING */
+
+#newsletter {
+	padding: 1.5em 0;
+	text-align: center;
+	background: #2a2a2e;
+}
+
+#newsletter .newsletter_inner {
+	width: 600px;
+	margin: 1.5em auto;
+}
+
+#newsletter h2{ 
+	font-size: 1.75em;
+	color: #fff;
+}
+
+#newsletter .sign_up_form {
+	margin-top: 0;
+}
+
+#newsletter .sign_up_form input[type="text"] {
+	width: 57%;
+	margin: 0 .5%;
+	height: 3.25em;
+	border: none;
+	outline: none;
+	border-radius: .3em;
+	background: #404043;
+	padding:.5em 1.25em;
+	font-size: 1.0em;
+	color: #fff;
+}
+
+#newsletter .sign_up_form .button {
+	border: none;
+	outline: none;
+	padding: 1em 4.5em;
+	border-radius: 0.3em;
+	background: #73e298;
+	color: #fff;
+	font-weight: 700;
+	font-size: .9em;
+	margin-top: 0em;
+}
