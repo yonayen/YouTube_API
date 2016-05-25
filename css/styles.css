@@ -1,0 +1,60 @@
+/* YouTube API -- Global Styling*/
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: 'Open Sans', sans-serif
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+.wrapper {
+	width: 1440px;
+	max-width: 90%;
+	margin:0 auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight:300;
+}
+
+/* NAVIGATION STYLING */
+
+#top_header {
+	padding:1.5em 0;
+}
+
+#top_header .logo {
+	float: left;
+	text-transform: uppercase;
+	font-size: 1.15em;
+	font-weight: 700;
+}
+
+#top_header .logo span {
+	font-weight: 300;
+	color: #73e298;
+}
+
+#top_header #main_nav {
+	float: right;
+	font-size: .9em;
+	padding-top: 1em;
+}
+
+#top_header #main_nav a {
+	color: #8b8b9f;
+	text-decoration: none;
+	margin-left: 1em;
+}
