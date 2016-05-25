@@ -32,7 +32,8 @@ h1,h2,h3,h4,h5,h6{
 /* NAVIGATION STYLING */
 
 #top_header {
-	padding:1.5em 0;
+	padding:1em 0;
+
 }
 
 #top_header .logo {
@@ -52,6 +53,7 @@ h1,h2,h3,h4,h5,h6{
 	float: right;
 	font-size: .9em;
 	padding-top: 1em;
+	margin-top: 0.9em;
 }
 
 #top_header #main_nav a {
@@ -127,44 +129,48 @@ h1,h2,h3,h4,h5,h6{
 /* SEARCH BAR STYLING */
 
 #newsletter {
-	padding: 1.5em 0;
+	padding: 0;
 	text-align: center;
-	background: #2a2a2e;
+	background: #737373;
 }
 
 #newsletter .newsletter_inner {
-	width: 600px;
+	width: 1200px;
 	margin: 1.5em auto;
 }
 
 #newsletter h2{ 
 	font-size: 1.75em;
 	color: #fff;
+	padding-top: 0.5em;
+	margin-top: 0em;
 }
 
 #newsletter .sign_up_form {
 	margin-top: 0;
+	padding-bottom: 1em;
 }
 
 #newsletter .sign_up_form input[type="text"] {
 	width: 57%;
 	margin: 0 .5%;
+	margin-left: 3em;
 	height: 3.25em;
 	border: none;
 	outline: none;
 	border-radius: .3em;
 	background: #404043;
 	padding:.5em 1.25em;
-	font-size: 1.0em;
+	font-size: 1.5em;
 	color: #fff;
 }
 
 #newsletter .sign_up_form .button {
 	border: none;
 	outline: none;
-	padding: 1em 4.5em;
+	padding: 1.6em 2.0em;
 	border-radius: 0.3em;
-	background: #73e298;
+	background: #CC181E;
 	color: #fff;
 	font-weight: 700;
 	font-size: .9em;
@@ -186,11 +192,11 @@ h1,h2,h3,h4,h5,h6{
 
 #main_footer .logo span {
 	font-weight: 300;
-	color: #73e298;
+	color: #CC181E;
 }
 
 #main_footer .copyright {
-	color: #8b8b9f;
+	color: #737373;
 	font-size: .75em;
 	margin: 0;
 }
@@ -200,7 +206,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #main_footer .links a {
-	color: #8b8b9f;
+	color: #737373;
 	font-size: .75em;
 	text-decoration: none;
 	margin: 0 .5em;
