@@ -1,6 +1,6 @@
-// --- API KEY: AIzaSyCKNNUXyaTDWJp14VhcwraU-mY7o4A27HY --- //
 
-// --- The endpoint: "https://www.googleapis.com/youtube/v3/search" --- //
+var tubeKey = 'AIzaSyCKNNUXyaTDWJp14VhcwraU-mY7o4A27HY';
+var tubeUrl = 'https://www.googleapis.com/youtube/v3/search';
 
 $(function(){
   $('#search-button').on("click", function(event){
