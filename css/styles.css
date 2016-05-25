@@ -38,13 +38,14 @@ h1,h2,h3,h4,h5,h6{
 #top_header .logo {
 	float: left;
 	text-transform: uppercase;
-	font-size: 1.15em;
-	font-weight: 700;
+	font-size: 1.45em;
+	font-weight: 800;
+	color: #CC181E;
 }
 
 #top_header .logo span {
-	font-weight: 300;
-	color: #73e298;
+	font-weight: 500;
+	color: #737373;
 }
 
 #top_header #main_nav {
@@ -54,7 +55,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #top_header #main_nav a {
-	color: #8b8b9f;
+	color: #737373;
 	text-decoration: none;
 	margin-left: 1em;
+	font-size: 1.1em;
 }
