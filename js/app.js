@@ -11,8 +11,13 @@ $(function(){
 });
 
 function getRequest(searchTerm){
+	var params = {
+    key: 'AIzaSyCKNNUXyaTDWJp14VhcwraU-mY7o4A27HY',
+    q: 'searchTerm'
+  };
+  url = 'https://www.googleapis.com/youtube/v3/search';
 	// two parameters: URL + function that will be called
-  $.getJSON('https://www.youtube.com/results?search_query='+ searchTerm, function(data){
+  $.getJSON('https://www.googleapis.com/youtube/v3/search'+ searchTerm, function(data){
 	showResults(data.Search);
   });
 }
