@@ -23,7 +23,7 @@ function showResults(results){
   var counter = 0;
   $.each(results, function(index,value){
     if (counter < 6) {
-      if (value.Poster != 'N/A') {
+      // if (value.Poster != 'N/A') {
         counter++;
         html += '<div class="row">'+
             '<div class="post">'+
@@ -32,9 +32,10 @@ function showResults(results){
               '<p class="post_info">' + value.Year + ' | ' + value.Type + '</p>'+
             '</div>'+
           '</div>';
-      }
+      // }
     }
     console.log(value.Title);
   });
  
  $('#top_movies .wrapper').append(html);
+}
