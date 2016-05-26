@@ -15,30 +15,30 @@ $(function() {
 // -- Function sends request w/ query to API -- //
 function getRequest(searchTerm){
 	$.getJSON(tubeUrl + '?part=snippet&key=' + tubeKey + '&q=' + searchTerm, function(data){
-		showResults(data.Search);
+		console.log((data.Search));
 	});
 }
 
-
+// -- Function to display search results on page -- //
 function showResults(results){
-  $('#top_movies .wrapper .row').remove()
-  var html = "";
-  var counter = 0;
-  $.each(results, function(index,value){
-    if (counter < 6) {
-      // if (value.Poster != 'N/A') {
-        counter++;
-        html += '<div class="row">'+
-            '<div class="post">'+
-              '<img src="' + value.Poster.replace("https://", "http://") + '"/>'+
-              '<h3 class="title">' + value.Title + '</h3>'+
-              '<p class="post_info">' + value.Year + ' | ' + value.Type + '</p>'+
-            '</div>'+
+	$('#top_movies .wrapper .row').remove();
+	var html = "";
+	var counter = 0;
+
+	$.each(results, function(index, value){
+		if (counter < 6) {
+			counter ++;
+			html += '<div class="row">' + '<div class="post">' +
+				'<img src="' + item.snippet.thumbnails.medium.url + '"/>' +
+				'<h3 class="title">' + item.snippet.title + '</h3>' +
+				'<p class="post_info">' + item.snippet.publishedAt + ' | ' + item.snippet.channelTitle + '</p>'+ 
+				'</div>'+
           '</div>';
-      // }
-    }
-    console.log(value.Title);
-  });
- 
- $('#top_movies .wrapper').append(html);
+		}
+	 console.log(item.snippet.title);
+	});
+
+	$('#top_movies .wrapper').append(html);
 }
+
+
