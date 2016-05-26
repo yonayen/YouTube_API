@@ -2,6 +2,16 @@
 var tubeKey = 'AIzaSyCKNNUXyaTDWJp14VhcwraU-mY7o4A27HY';
 var tubeUrl = 'https://www.googleapis.com/youtube/v3/search';
 
+// --- Function takes query term, displays it and calls getRequest function with query -- //
+$(function() {
+	$('#search-button').on("click", function(event) {
+		var searchTerm = $('#query').val();
+		// -- Takes search term and renders it on top of where clips are displayed -- //
+		$('#top_movies .clearfix h2').text(searchTerm);
+		getRequest(searchTerm);
+	});
+});
+
 $(function(){
   $('#search-button').on("click", function(event){
     var searchTerm = $('#query').val();
