@@ -1,4 +1,4 @@
-
+// Global Variables
 var tubeKey = 'AIzaSyCKNNUXyaTDWJp14VhcwraU-mY7o4A27HY';
 var tubeUrl = 'https://www.googleapis.com/youtube/v3/search';
 
