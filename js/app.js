@@ -19,6 +19,7 @@ function getRequest(searchTerm)
 {
 	$.getJSON(tubeUrl + '?part=snippet&key=' + tubeKey + '&q=' + searchTerm, function(data){
 		console.log((data.items));
+		showResults(data.items);
 	});
 }
 
@@ -29,17 +30,17 @@ function showResults(results)
 	var html = "";
 	var counter = 0;
 
-	$.each(results, function(index, value){
-		if (counter < 6) {
+	$.each(results, function(index, arrayitem){
+		if (counter < 10) {
 			counter ++;
 			html += '<div class="row">' + '<div class="post">' +
-				'<img src="' + item.snippet.thumbnails.medium.url + '"/>' +
-				'<h3 class="title">' + item.snippet.title + '</h3>' +
-				'<p class="post_info">' + item.snippet.publishedAt + ' | ' + item.snippet.channelTitle + '</p>'+ 
+				'<img src="' + arrayitem.snippet.thumbnails.medium.url + '"/>' +
+				'<h3 class="title">' + arrayitem.snippet.title + '</h3>' +
+				'<p class="post_info">' + arrayitem.snippet.publishedAt + ' | ' + item.snippet.channelTitle + '</p>'+ 
 				'</div>'+
           '</div>';
 		}
-	 console.log(item.snippet.title);
+	 console.log(arrayitem.snippet.title);
 	});
 
 	$('#top_movies .wrapper').append(html);
