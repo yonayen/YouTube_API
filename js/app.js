@@ -31,7 +31,7 @@ function showResults(results)
 	var counter = 0;
 
 	$.each(results, function(index, arrayitem){
-		if (counter < 10) {
+		if (counter < 9) {
 			counter ++;
 			html += '<div class="row">' + '<div class="post">' +
 				'<a href="https://www.youtube.com/watch?v='+ arrayitem.id.videoId + ' "><img src="' + arrayitem.snippet.thumbnails.medium.url + '"/></a>' +

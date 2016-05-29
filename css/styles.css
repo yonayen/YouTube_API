@@ -177,6 +177,10 @@ h1,h2,h3,h4,h5,h6{
 	margin-top: 0em;
 }
 
+.sign_up_form > button:hover {
+	background-color: #404043;
+}
+
 /* FOOTER STYLING */
 
 #main_footer {
