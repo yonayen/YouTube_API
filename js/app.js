@@ -34,10 +34,10 @@ function showResults(results)
 		if (counter < 10) {
 			counter ++;
 			html += '<div class="row">' + '<div class="post">' +
-				'<img src="' + arrayitem.snippet.thumbnails.medium.url + '"/>' +
+				'<a href="https://www.youtube.com/watch?v='+ arrayitem.id.videoId + ' "><img src="' + arrayitem.snippet.thumbnails.medium.url + '"/></a>' +
 				'<h3 class="title">' + arrayitem.snippet.title + '</h3>' +
-				'<p class="post_info">' + arrayitem.snippet.publishedAt + ' | ' + item.snippet.channelTitle + '</p>'+ 
-				'</div>'+
+				'<p class="post_info">' + arrayitem.snippet.publishedAt + ' | ' + arrayitem.snippet.channelTitle + '</p>'+ 
+				'</div>' +
           '</div>';
 		}
 	 console.log(arrayitem.snippet.title);
