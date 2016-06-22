@@ -46,4 +46,10 @@ function showResults(results)
 	$('#top_movies .wrapper').append(html);
 }
 
+// Video object 
+
+var Video = function(tubeKey, tubeUrl, thumbnail, title, publishedAt, channelTitle)
+{
+	
+}
 
