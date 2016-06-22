@@ -1,6 +1,19 @@
+// Video object 
+var Video = function(tubeKey, tubeUrl, thumbnail, title, publishedAt, channelTitle)
+{
+	this.tubeKey = 'AIzaSyCKNNUXyaTDWJp14VhcwraU-mY7o4A27HY';
+	this.tubeUrl = 'https://www.googleapis.com/youtube/v3/search';
+	this.thumbnail = thumbnails.medium.url;
+	this.title = title;
+	this.publishedAt = publishedAt;
+	this.channelTitle = channelTitle;
+}
+
+/*
 // Global Variables
 var tubeKey = 'AIzaSyCKNNUXyaTDWJp14VhcwraU-mY7o4A27HY';
 var tubeUrl = 'https://www.googleapis.com/youtube/v3/search';
+*/
 
 // --- Function takes query term, displays it and calls getRequest function with query -- //
 $(function() 
@@ -46,13 +59,5 @@ function showResults(results)
 	$('#top_movies .wrapper').append(html);
 }
 
-// Video object 
 
-var Video = function(tubeKey, tubeUrl, thumbnail, title, publishedAt, channelTitle)
-{
-	this.tubeKey = 'AIzaSyCKNNUXyaTDWJp14VhcwraU-mY7o4A27HY';
-	this.tubeUrl = 'https://www.googleapis.com/youtube/v3/search';
-	this.thumbnail = thumbnails.medium.url;
-	
-}
 
