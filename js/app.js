@@ -50,6 +50,9 @@ function showResults(results)
 
 var Video = function(tubeKey, tubeUrl, thumbnail, title, publishedAt, channelTitle)
 {
+	this.tubeKey = 'AIzaSyCKNNUXyaTDWJp14VhcwraU-mY7o4A27HY';
+	this.tubeUrl = 'https://www.googleapis.com/youtube/v3/search';
+	this.thumbnail = thumbnails.medium.url;
 	
 }
 
