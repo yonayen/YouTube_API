@@ -43,7 +43,23 @@ function showResults(results) {
 }
 
 var theHTMLInput = [
-	''
+	'<div class="row">',
+		'<div class="post">',
+			'<a href="https://www.youtube.com/watch?v=',
+			arrayitem.id.videoId,
+			' "><img src="',
+			arrayitem.snippet.thumbnails.medium.url,
+			'"/></a>',
+			'<h3 class="title">',
+			arrayitem.snippet.title,
+			'</h3>',
+			'<p class="post_info">',
+			arrayitem.snippet.publishedAt,
+			' | ',
+			arrayitem.snippet.channelTitle,
+			'</p>',
+		'</div>',
+    '</div>',
 ].join('')
 
-html += theHTMLInput
+html += theHTMLInput;
