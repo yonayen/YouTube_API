@@ -16,7 +16,7 @@ $(function(){
 // Function sends request w/ query to API
 function getRequest(searchTerm){
 	$.getJSON(tubeUrl + '?part=snippet&key=' + tubeKey + '&q=' + searchTerm, function(data){
-		console.log((data.items));
+		console.log(data.items);
 		showResults(data.items);
 	});
 }
