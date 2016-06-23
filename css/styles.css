@@ -68,6 +68,7 @@ h1,h2,h3,h4,h5,h6{
 #top_movies,
 #top_shows {
 	padding: 0.5em 0;
+	margin: 0 auto;
 }
 
 #top_movies header,
@@ -103,7 +104,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .row .post {
-	width: 14%;
+	width: 16%;
 	float: left;
 	margin-right: 2.5%;
 }
