@@ -17,7 +17,7 @@ var Video = function(videoId, thumbnail, title, publishedAt, channelTitle)
 // --- Function takes query term, displays it and calls getRequest function with query -- //
 $(function() 
 {
-	$('#search-button').on("click", function(event)
+	$('#search-button').on('click', function(event)
 	{
 		var searchTerm = $('#query').val();
 		// -- Takes search term and renders it on top of where clips are displayed -- //
