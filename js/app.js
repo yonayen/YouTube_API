@@ -3,8 +3,7 @@ var tubeKey = 'AIzaSyCKNNUXyaTDWJp14VhcwraU-mY7o4A27HY';
 var tubeUrl = 'https://www.googleapis.com/youtube/v3/search';
 
 // Function takes query term, displays it and calls getRequest function with query
-$(function() 
-{
+$(function(){
 	$('#search-button').on("click", function()
 	{
 		var searchTerm = $('#query').val();
@@ -15,8 +14,7 @@ $(function()
 });
 
 // Function sends request w/ query to API
-function getRequest(searchTerm)
-{
+function getRequest(searchTerm){
 	$.getJSON(tubeUrl + '?part=snippet&key=' + tubeKey + '&q=' + searchTerm, function(data){
 		console.log((data.items));
 		showResults(data.items);
@@ -24,8 +22,7 @@ function getRequest(searchTerm)
 }
 
 // Function to display search results on page
-function showResults(results)
-{
+function showResults(results){
 	$('#top_movies .wrapper .row').remove();
 	var html = "";
 	var counter = 0;
