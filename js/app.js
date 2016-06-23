@@ -29,37 +29,36 @@ function showResults(results) {
 	$.each(results, function(index, arrayitem) {
 		if (counter < 9) {
 			counter ++;
-			html += '<div class="row">' + '<div class="post">' +
-				'<a href="https://www.youtube.com/watch?v='+ arrayitem.id.videoId + ' "><img src="' + arrayitem.snippet.thumbnails.medium.url + '"/></a>' +
-				'<h3 class="title">' + arrayitem.snippet.title + '</h3>' +
-				'<p class="post_info">' + arrayitem.snippet.publishedAt + ' | ' + arrayitem.snippet.channelTitle + '</p>'+ 
-				'</div>' +
-          '</div>';
+
+			var theHTMLInput = [
+				'<div class="row">',
+					'<div class="post">',
+						'<a href="https://www.youtube.com/watch?v=',
+						arrayitem.id.videoId,
+						' "><img src="',
+						arrayitem.snippet.thumbnails.medium.url,
+						'"/></a>',
+						'<h3 class="title">',
+						arrayitem.snippet.title,
+						'</h3>',
+						'<p class="post_info">',
+						arrayitem.snippet.publishedAt,
+						' | ',
+						arrayitem.snippet.channelTitle,
+						'</p>',
+					'</div>',
+			    '</div>',
+			].join('')
+
+		html += theHTMLInput;
+
 		}
+
 	 console.log(arrayitem.snippet.title);
+	 
 	});
 
 	$('#top_movies .wrapper').append(html);
 }
 
-var theHTMLInput = [
-	'<div class="row">',
-		'<div class="post">',
-			'<a href="https://www.youtube.com/watch?v=',
-			arrayitem.id.videoId,
-			' "><img src="',
-			arrayitem.snippet.thumbnails.medium.url,
-			'"/></a>',
-			'<h3 class="title">',
-			arrayitem.snippet.title,
-			'</h3>',
-			'<p class="post_info">',
-			arrayitem.snippet.publishedAt,
-			' | ',
-			arrayitem.snippet.channelTitle,
-			'</p>',
-		'</div>',
-    '</div>',
-].join('')
 
-html += theHTMLInput;
