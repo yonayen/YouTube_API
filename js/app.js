@@ -42,4 +42,8 @@ function showResults(results) {
 	$('#top_movies .wrapper').append(html);
 }
 
+var theHTMLInput = [
+	''
+].join('')
 
+html += theHTMLInput
