@@ -132,11 +132,13 @@ h1,h2,h3,h4,h5,h6{
 	padding: 0;
 	text-align: center;
 	background: #737373;
+	width: 100%;
 }
 
 #newsletter .newsletter_inner {
 	width: 1200px;
 	margin: 1.5em auto;
+	width: 100%;
 }
 
 #newsletter h2{ 
@@ -175,6 +177,10 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: 700;
 	font-size: .9em;
 	margin-top: 0em;
+}
+
+.button:hover {
+	background-color: #404043;
 }
 
 /* FOOTER STYLING */
