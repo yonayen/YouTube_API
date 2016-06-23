@@ -3,13 +3,13 @@ var tubeKey = 'AIzaSyCKNNUXyaTDWJp14VhcwraU-mY7o4A27HY';
 var tubeUrl = 'https://www.googleapis.com/youtube/v3/search';
 
 // Video object 
-var Video = function(tubeKey, tubeUrl, thumbnail, title, publishedAt, channelTitle)
+var Video = function(videoId, thumbnail, title, publishedAt, channelTitle)
 {
-	this.videoId =  videoId;
-	this.thumbnail = thumbnails;
+	this.channelTitle = channelTitle;
+	this.thumbnail = thumbnail;
 	this.title = title;
 	this.publishedAt = publishedAt;
-	this.channelTitle = channelTitle;
+	this.videoId =  videoId;
 }
 
 
@@ -49,7 +49,7 @@ function showResults(results)
 			var tubeVideo = new Video(arrayitem.id.videoId, arrayitem.snippet.thumbnails.medium.url, arrayitem.snippet.title, arrayitem.snippet.publishedAt, arrayitem.snippet.channelTitle);
 
 			html += '<div class="row">' + '<div class="post">' +
-				'<a href="https://www.youtube.com/watch?v='+ tubeVideo.videoId + ' "><img src="' + tubeVideo.thumbnails + '"/></a>' +
+				'<a href="https://www.youtube.com/watch?v='+ tubeVideo.videoId + ' "><img src="' + tubeVideo.thumbnail + '"/></a>' +
 				'<h3 class="title">' + tubeVideo.title + '</h3>' +
 				'<p class="post_info">' + tubeVideo.publishedAt + ' | ' + tubeVideo.channelTitle + '</p>'+ 
 				'</div>' +
