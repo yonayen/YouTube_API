@@ -24,7 +24,7 @@ function getRequest(searchTerm){
 // Function to display search results on page
 function showResults(results){
 	$('#top_movies .wrapper .row').remove();
-	var html = "";
+	var html = '';
 	var counter = 0;
 
 	$.each(results, function(index, arrayitem){
